@@ -42,6 +42,10 @@ class Solution {
             if(m.containsKey(target)){
                 ans +=m.get(target);
             }
+            /*
+            getOrDefault set the intial value of map is 0 if its not exist in map if it exits then 
+            increment by 1
+            */
             m.put(arr[i],m.getOrDefault(arr[i],0)+1);
         }
         return ans;
